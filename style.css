@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --shadow-1: 0 .25rem .25rem rgba(0,0,0,.075);
+    --shadow-2: 0 .5rem 1rem rgba(0,0,0,.15);
+    --shadow-3: 0 1rem 3rem rgba(0,0,0,.175);
+}
+body{
+    font-family: poppins;
+}
+
+
+/* Banner CSS */
+.banner_section{
+    background: url(https://trbahadurpur.com/wp-content/uploads/2021/01/background1-01.jpg) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+.banner_section::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.banner_content{
+    max-width: 600px;
+    z-index: 1;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: var(--shadow-3);
+}
+.banner_content h2{
+    font-size: 40px;
+    text-shadow: 2px 2px 8px red;
+}
+.banner_content p{
+    font-size: 16px;
+    color: #fafafa;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.banner_content a{
+    text-decoration: none;
+    color: #000;
+    background: #ddd;
+    padding: 8px 20px;
+    font-size: 20px;
+    border-radius: 20px 0;
+    font-weight: 500;
+    box-shadow: var(--shadow-2);
+    border: 2px solid red;
+}
+
+/* Modal CSS */
+.modal_section{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-150px);
+    transition: all .4s ease-in-out;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal_section.active{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0px);
+}
+.modal_section .modal_content{
+    background: #fff;
+    height: auto;
+    width: 400px;
+    border-radius: 5px;
+}
+.modal_section .modal_content .modal_header{
+    padding: 7px 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e9e9e9;
+}
+.modal_section .modal_content .modal_header h2{
+    font-size: 25px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+.modal_section .modal_content .modal_header p{
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #e4e6eb;
+    border-radius: 50%;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+}
+.modal_section .modal_content .modal_body{
+    padding: 7px 15px;
+    font-size: 15px;
+}
+.modal_section .modal_content .modal_body h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+.modal_section .modal_content .modal_body p{
+    font-size: 15px;
+    padding: 8px 0;
+}
+.modal_section .modal_content .modal_footer{
+    padding: 7px 15px;
+    border-top: 1px solid #e9e9e9;
+}
+
+
+/* Alert CSS */
+.alert_section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+    
+    transform: translateY(-180px);
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    pointer-events: none;   
+}
+.alert_section.active{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0px);
+}
+.alert_section .alert_content{
+    width: 450px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: var(--shadow-3);
+}
+.alert_section .alert_content .alert_header{
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e4e6eb;
+}
+.alert_section .alert_content .alert_header h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+.alert_section .alert_content .alert_header p{
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #e4e6eb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.alert_section .alert_content .alert_body{
+    padding: 8px 15px;
+    font-size: 15px;
+}
+.alert_section .alert_content .alert_footer{
+    padding: 10px 15px;
+    border-top: 1px solid #e4e6eb;
+    text-align: end;
+}
+.alert_section .alert_content .alert_footer .keep_editing{
+    text-decoration: none;
+    padding: 5px 15px;
+    color: #0067df;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.alert_section .alert_content .alert_footer .dis_card{
+    text-decoration: none;
+    padding: 5px 15px;
+    background: #0067df;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Accordion CSS */
+.sajjad_accordion{
+    background: #e9e9e9;
+    padding: 50px 0;
+}
+.sajjad_accordion .saccordion_item{
+    width: 450px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    transition: all .2s ease-in-out;
+}
+.sajjad_accordion .saccordion_item .saccordion_header{
+    padding: 12px;
+    background: #e7f1ff;
+    border: 1px solid #ddd;
+    position: relative;
+    cursor: pointer;
+    
+}
+.sajjad_accordion .saccordion_item .saccordion_header::after{
+    content: '\f077';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    transition: all .3s ease-in-out;
+}
+.sajjad_accordion .saccordion_item .saccordion_header.active::after{
+    transform: rotate(180deg);
+}
+.sajjad_accordion .saccordion_item .saccordion_header h3{
+    font-size: 20px;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+.sajjad_accordion .saccordion_item .saccordion_body{
+    height: 0;
+    overflow: hidden;
+    transition: .3s;
+    
+}
+.sajjad_accordion .saccordion_item .saccordion_body .saccordion_content{
+    padding: 12px;
+}
