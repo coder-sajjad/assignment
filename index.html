@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- ALL CSS FIiles -->
    <link rel="stylesheet" href="style.css">
     
@@ -14,106 +14,274 @@
 </head>
 <body>
 
-    <section class="banner_section">
-        <div class="banner_content">
-            <h2>I Love JavaScript</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, vel soluta, perspiciatis id itaque porro officia deserunt quidem consequuntur similique corporis fuga voluptate quaerat asperiores minus in natus quibusdam ratione?</p>
-            <a id="click_me" href="#">Click me</a>
+    <section class="sajjad-tab">
+        <div class="stab-header">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#course">Course</a></li>
+            </ul>
         </div>
-    </section>
-
-    <!-- Sajjad Modal -->
-    <section class="modal_section">
-        <div class="modal_content">
-            <div class="modal_header">
-                <h2>Mern Stack</h2>
-                <p id="modal_close" class="close">&times;</p>
+        <div class="stab-body">
+            <div class="stab-pane active" id="home">
+                <h3>Home page</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nostrum neque, cum aliquam voluptatum dicta eaque itaque iure accusamus temporibus.</p>
             </div>
-            <div class="modal_body">
-                <h3>I Love JS</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure voluptas magni delectus totam voluptate non.
-                </p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, autem!</p>
+            <div class="stab-pane" id="about">
+                <h3>About page</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nostrum neque, cum aliquam voluptatum dicta eaque itaque iure accusamus temporibus.</p>
             </div>
-            <div class="modal_footer">
-                <h5>We Love JS</h5>
+            <div class="stab-pane" id="contact">
+                <h3>Contact page</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nostrum neque, cum aliquam voluptatum dicta eaque itaque iure accusamus temporibus.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Sajjad Alert -->
-    <section class="alert_section">
-        <div class="alert_content">
-            <div class="alert_header">
-                <h3>Alert header</h3>
-                <p id="alert_close" class="close">&times;</p>
+            <div class="stab-pane" id="blog">
+                <h3>Blog page</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nostrum neque, cum aliquam voluptatum dicta eaque itaque iure accusamus temporibus.</p>
             </div>
-            <div class="alert_body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <div class="stab-pane" id="service">
+                <h3>Service page</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nostrum neque, cum aliquam voluptatum dicta eaque itaque iure accusamus temporibus.</p>
             </div>
-            <div class="alert_footer">
-                <a class="keep_editing" href="#">Keep Editing</a>
-                <a class="dis_card" href="#">Discard</a>
+            <div class="stab-pane" id="course">
+                <h3>Course page</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nostrum neque, cum aliquam voluptatum dicta eaque itaque iure accusamus temporibus.</p>
             </div>
         </div>
     </section>
 
-    <!-- Sajjad According -->
-    <section class="sajjad_accordion">
-        <div class="saccordion_item">
-            <div class="saccordion_header">
-                <h3>What is your name?</h3>
-            </div>
-            <div class="saccordion_body">
-                <div class="saccordion_content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi, praesentium blanditiis voluptatem dolorum libero dolore impedit cum itaque necessitatibus!</p>
+    
+
+    <!-- Theme option clone -->
+    <section class="main-theme clearfix">
+        <div class="scontainer">
+            <div class="theme-option">
+                <div class="theme-header">
+                    <h1>Woodmart <span>5.2.3</span></h1>
                 </div>
-            </div>
-        </div>
-        <div class="saccordion_item">
-            <div class="saccordion_header">
-                <h3>What's your hobby</h3>
-            </div>
-            <div class="saccordion_body">
-                <div class="saccordion_content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis alias odio quibusdam vel inventore sequi est? Animi quidem numquam molestiae aperiam laborum provident rerum sunt. Accusamus aperiam obcaecati tenetur odit iure ea id perferendis reiciendis nam, officiis quod doloribus sapiente, nostrum velit! Facere, ad ipsum. Molestias facilis sint eos.</p>
+                <div class="theme-left-site float-left">
+                    <ul>
+                        <li><a class="active" href="#general">General</a></li>
+                        <li><a href="#layout">General layout</a></li>
+                        <li><a href="#page">Page title</a></li>
+                        <li><a href="#footer">Footer</a></li>
+                        <li><a href="#typography">Typography</a></li>
+                        <li><a href="#styles">Styles and color</a></li>
+                        <li><a href="#blogpage">Blog page</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#product">Product archive</a></li>
+                        <li><a href="#single">Single Prodcut</a></li>
+                        <li><a href="#login">Login?Register</a></li>
+                        <li><a href="#social">Social Profiles</a></li>
+                        <li><a href="#integrations">API integrations</a></li>
+                        <li><a href="#performance">Performance</a></li>
+                        <li><a href="#maintenance">Maintenance</a></li>
+                        <li><a href="#white">White label</a></li>
+                        <li><a href="#custom-CSS">Custom CSS</a></li>
+                        <li><a href="#custom-JS">Custom JS</a></li>
+                        <li><a href="#other">Other</a></li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-        <div class="saccordion_item">
-            <div class="saccordion_header">
-                <h3>How old are you?</h3>
-            </div>
-            <div class="saccordion_body">
-                <div class="saccordion_content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellendus voluptatibus obcaecati perspiciatis accusamus odio? Beatae soluta neque accusantium temporibus consequuntur ipsum eveniet sunt.</p>
-                </div>
-            </div>
-        </div>
-        <div class="saccordion_item">
-            <div class="saccordion_header">
-                <h3>What is JavaScript?</h3>
-            </div>
-            <div class="saccordion_body">
-                <div class="saccordion_content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellendus voluptatibus obcaecati perspiciatis accusamus odio? Beatae soluta neque accusantium temporibus consequuntur ipsum eveniet sunt.</p>
-                </div>
-            </div>
-        </div>
-        <div class="saccordion_item">
-            <div class="saccordion_header">
-                <h3>Are You Developer?</h3>
-            </div>
-            <div class="saccordion_body">
-                <div class="saccordion_content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellendus voluptatibus obcaecati perspiciatis accusamus odio? Beatae soluta neque accusantium temporibus consequuntur ipsum eveniet sunt.</p>
+                <div class="theme-right-site float-right">
+                    <div class="theme-pane active" id="general">
+                        <h3>General</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum dolores nesciunt perferendis quibusdam excepturi deleniti nisi officia. Aspernatur ullam quam ab modi in sequi necessitatibus aut, qui est dolor!</p><br>
+                    </div>
+                    <div class="theme-pane" id="layout">
+                        <h3>General layout</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p><br>
+                        <h3>General layout</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem architecto dolores sed neque repellendus perferendis nam illum tenetur nostrum ipsam soluta facere deserunt, atque totam animi, rerum facilis quisquam aliquam laboriosam cupiditate? Quos, labore impedit! Culpa quidem labore aut dolore blanditiis sit tempora, veritatis architecto? Explicabo, ut. Ipsum, iste ad!</p><br><br>
+                    </div>
+                    <div class="theme-pane" id="page">
+                        <h3>Page title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p>
+                    </div>
+                    <div class="theme-pane" id="footer">
+                        <h3>Footer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p>
+                    </div>
+                    <div class="theme-pane" id="typography">
+                        <h3>Typography</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p>
+                    </div>
+                    <div class="theme-pane" id="styles">
+                        <h3>Styles and color</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p>
+                    </div>
+                    <div class="theme-pane" id="blogpage">
+                        <h3>Blog</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p>
+                    </div>
+                    <div class="theme-pane" id="portfolio">
+                        <h3>Portfolio</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p>
+                    </div>
+                    <div class="theme-pane" id="shop">
+                        <h3>Shop</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p>
+                    </div>
+                    <div class="theme-pane" id="product">
+                        <h3>Product archive</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p>
+                    </div>
+                    <div class="theme-pane" id="single">
+                        <h3>Single product</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p>
+                    </div>
+                    <div class="theme-pane" id="login">
+                        <h3>Login?Rregistry</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p>
+                    </div>
+                    <div class="theme-pane" id="social">
+                        <h3>Social profiles</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p>
+                    </div>
+                    <div class="theme-pane" id="integrations">
+                        <h3>Integrations</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p>
+                    </div>
+                    <div class="theme-pane" id="performance">
+                        <h3>Performance</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p>
+                    </div>
+                    <div class="theme-pane" id="maintenance">
+                        <h3>Maintenance</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p>
+                    </div>
+                    <div class="theme-pane" id="white">
+                        <h3>White label</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p>
+                    </div>
+                    <div class="theme-pane" id="custom-CSS">
+                        <h3>Custom CSS</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p>
+                    </div>
+                    <div class="theme-pane" id="custom-JS">
+                        <h3>Custom JS</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p>
+                    </div>
+                    <div class="theme-pane" id="other">
+                        <h3>Other options</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque commodi eum, facilis suscipit facere eligendi omnis similique libero. Repudiandae.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Result App Publish -->
+    <section class="result-section my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="card sajjad shadow">
+                        <div class="card-header bg-success text-white">
+                            <h3 >Student Information</h3>
+                        </div>
+                        <div class="card-body">
+                            <form id="student-form" action="">
+                                <div class="form-group mb-3">
+                                    <input name="Name" type="text" class="form-control shadow-none" placeholder="Student Name">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input name="Roll" type="text" class="form-control shadow-none" placeholder="Roll Number">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input name="ClassName" type="text" class="form-control shadow-none" placeholder="Class Name">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input name="Photo" type="text" class="form-control shadow-none" placeholder="Photo">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="">Gender</label><br>
+                                    <input id="Male" name="gender" type="radio" class="" value="Male"><label class="ms-2" for="Male">Male</label>
+                                    <input id="Female" name="gender" type="radio" class="ms-3" value="Female"><label class="ms-2" for="Female">Female</label>
+                                </div><br>
+                                <div class="form-group mb-3">
+                                    <label class="mb-2" for="">Your Marks</label>
+                                    <input name="marks" type="text" class="form-control shadow-none" placeholder="Bangla">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input name="marks" type="text" class="form-control shadow-none" placeholder="English">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input name="marks" type="text" class="form-control shadow-none" placeholder="Math">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input name="marks" type="text" class="form-control shadow-none" placeholder="Science">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input name="marks" type="text" class="form-control shadow-none" placeholder="Social Science">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input name="marks" type="text" class="form-control shadow-none" placeholder="Religion">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input name="submit" type="submit" class="btn btn-success shadow-none w-100" value="Add Student">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table table-striped shadow table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Name</th>
+                                        <th>Roll</th>
+                                        <th>Class</th>
+                                        <th>Photo</th>
+                                        <th>Gender</th>
+                                        <th>Grade</th>
+                                        <th>CGPA</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="data_list">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Result Modal -->
+    <div class="modal fade" id="student_modal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h3 class="m-auto">Your Result</h3>
+                </div>
+                <div class="modal-body clearfix">
+                    <div class="student-modal-body">
+                        
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
 
 
     <!-- All JS Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./Result.js"></script>
     <script src="./function.js"></script>
     <script src="./app.js"></script>
 
