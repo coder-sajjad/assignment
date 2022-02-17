@@ -126,6 +126,7 @@ allStudent_data()
 // All Student Data
 function allStudent_data(){
 
+    let result = new Result();
     let all_data = dataGet('result_Apps');
 
     let student_data = '';
@@ -139,8 +140,8 @@ function allStudent_data(){
                 <td> ${ student.student_class } </td>
                 <td> <img style="width: 50px; height: 50px; object-fit: cover;" src="${ student.photo } " alt=""> </td>
                 <td> ${ student.gender } </td>
-                <td>A</td>
-                <td>3.25</td>
+                <td>${result.finalGrade(all_data[index].bangla, all_data[index].english, all_data[index].math, all_data[index].science, all_data[index].social_science, all_data[index].religion).totalCgpa}</td>
+                <td>${result.finalGrade(all_data[index].bangla, all_data[index].english, all_data[index].math, all_data[index].science, all_data[index].social_science, all_data[index].religion).totalGrade}</td>
                 <td>
                     <button class="btn text-white btn-info shadow-none btn-sm" onclick="studentViewResult(${index})" data-bs-toggle="modal" data-bs-target="#student_modal">View</button>
                     <button onclick="deleteData(${index})" class="btn text-white btn-danger shadow-none btn-sm">Delete</button>
@@ -172,7 +173,7 @@ function deleteData(id){
     
 };
 
-// View Modal Element
+// Modal Element
 const student_modal_body = document.querySelector('.student-modal-body');
 
 /**
